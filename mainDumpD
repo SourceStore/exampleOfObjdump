@@ -1,0 +1,17 @@
+
+main.o:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+_main:
+       0:	55 	pushq	%rbp
+       1:	48 89 e5 	movq	%rsp, %rbp
+       4:	48 83 ec 10 	subq	$16, %rsp
+       8:	bf 05 00 00 00 	movl	$5, %edi
+       d:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+      14:	e8 00 00 00 00 	callq	0 <_main+0x19>
+      19:	31 ff 	xorl	%edi, %edi
+      1b:	89 45 f8 	movl	%eax, -8(%rbp)
+      1e:	89 f8 	movl	%edi, %eax
+      20:	48 83 c4 10 	addq	$16, %rsp
+      24:	5d 	popq	%rbp
+      25:	c3 	retq

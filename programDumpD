@@ -1,0 +1,69 @@
+
+program:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+__text:
+100000f70:	55 	pushq	%rbp
+100000f71:	48 89 e5 	movq	%rsp, %rbp
+100000f74:	48 83 ec 10 	subq	$16, %rsp
+100000f78:	bf 05 00 00 00 	movl	$5, %edi
+100000f7d:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000f84:	e8 17 00 00 00 	callq	23 <__Z6squarei>
+100000f89:	31 ff 	xorl	%edi, %edi
+100000f8b:	89 45 f8 	movl	%eax, -8(%rbp)
+100000f8e:	89 f8 	movl	%edi, %eax
+100000f90:	48 83 c4 10 	addq	$16, %rsp
+100000f94:	5d 	popq	%rbp
+100000f95:	c3 	retq
+100000f96:	90 	nop
+100000f97:	90 	nop
+100000f98:	90 	nop
+100000f99:	90 	nop
+100000f9a:	90 	nop
+100000f9b:	90 	nop
+100000f9c:	90 	nop
+100000f9d:	90 	nop
+100000f9e:	90 	nop
+100000f9f:	90 	nop
+100000fa0:	55 	pushq	%rbp
+100000fa1:	48 89 e5 	movq	%rsp, %rbp
+100000fa4:	89 7d fc 	movl	%edi, -4(%rbp)
+100000fa7:	8b 7d fc 	movl	-4(%rbp), %edi
+100000faa:	0f af 7d fc 	imull	-4(%rbp), %edi
+100000fae:	89 f8 	movl	%edi, %eax
+100000fb0:	5d 	popq	%rbp
+100000fb1:	c3 	retq
+
+_main:
+100000f70:	55 	pushq	%rbp
+100000f71:	48 89 e5 	movq	%rsp, %rbp
+100000f74:	48 83 ec 10 	subq	$16, %rsp
+100000f78:	bf 05 00 00 00 	movl	$5, %edi
+100000f7d:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000f84:	e8 17 00 00 00 	callq	23 <__Z6squarei>
+100000f89:	31 ff 	xorl	%edi, %edi
+100000f8b:	89 45 f8 	movl	%eax, -8(%rbp)
+100000f8e:	89 f8 	movl	%edi, %eax
+100000f90:	48 83 c4 10 	addq	$16, %rsp
+100000f94:	5d 	popq	%rbp
+100000f95:	c3 	retq
+100000f96:	90 	nop
+100000f97:	90 	nop
+100000f98:	90 	nop
+100000f99:	90 	nop
+100000f9a:	90 	nop
+100000f9b:	90 	nop
+100000f9c:	90 	nop
+100000f9d:	90 	nop
+100000f9e:	90 	nop
+100000f9f:	90 	nop
+
+__Z6squarei:
+100000fa0:	55 	pushq	%rbp
+100000fa1:	48 89 e5 	movq	%rsp, %rbp
+100000fa4:	89 7d fc 	movl	%edi, -4(%rbp)
+100000fa7:	8b 7d fc 	movl	-4(%rbp), %edi
+100000faa:	0f af 7d fc 	imull	-4(%rbp), %edi
+100000fae:	89 f8 	movl	%edi, %eax
+100000fb0:	5d 	popq	%rbp
+100000fb1:	c3 	retq
